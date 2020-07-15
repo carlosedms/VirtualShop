@@ -3,50 +3,72 @@
     flex-direction: column;
 }
 
-:root{ 
-    --test: white; 
-    --test2: white;
-}
 /* ==================== Header ================================ */
-/* container geral do header */
+
+/* Container geral do header. */
 .container-header{ 
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 15vh;
     width: 100vw;
-    background-color: var(--test);
-    border-bottom: 2px solid #D5D8DC;
+    background: white;
+    box-shadow: 1px 1px 20px 0px #000000;
 }
 
+/* Container dos botões. */
 .container-nav-header{
     display: flex;
     width: 23vw;
     height: 10vh;
-    background-color: var(--test2);
+    background-color: white;
     justify-content: space-between;
     align-items: center;
 
 }
 
+/* Formata os botões. */
 .nav-btn{
     text-decoration: none;
     color: black;
     font-size: 18px;
     font-weight: bold;
     background-color: white;
-    padding: 12px 17px 12px 17px;
+    padding: 12px 17px;
     transition: .3s;
 }
 
+/* Animação dos botões. */
 .nav-btn:hover{
     border-bottom: 4px solid black;
 }
 
+/* Container da pesquisa e do carrinho. */
 .container-busca-header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-right:30px;
+    width: 21vw;
 }
+
+/* Container apenas da pesquisa. */
+.container-busca{
+    display: flex;
+    flex-direction: row;
+    background-color: #EAECEE;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* Tag do input. */
+.input-busca-header{
+    border: none;
+    outline: none;
+    height: 1.5vw;
+    background-color: #EAECEE;
+}
+
 
 /* configurações da logo */
 .logo-header{
