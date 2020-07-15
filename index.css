@@ -61,15 +61,46 @@
     display: flex;
     height: auto;
     width: 100vw;
-    background-color: aqua;
+    background-color: transparent;
 }
 
+/* ===================================Icon Configs Start======================================= */
 
 .footer-social{
-    background-color: transparent;
-    font-family: sans-serif;
+    background-color: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
+}
+
+.fbicon{
+    color: black;
+}
+
+.fbicon:hover{
+    color: #3b5998;
+    transition: 0.2s;
+}
+
+.igicon{
+    color: black;
+}
+
+.igicon:hover{
+    transition-property: initial;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tticon{
+    color: black;
+}
+
+.tticon:hover{
+    color: #00aced;
+    transition: 0.2s;
 }
