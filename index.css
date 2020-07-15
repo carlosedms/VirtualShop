@@ -3,20 +3,26 @@
     flex-direction: column;
 }
 
-.container-header{
+/* ==================== Header ================================ */
+/* container geral do header */
+.container-header{ 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 15vh;
     width: 100vw;
     background-color: yellow;
 }
 
+/* configurações da logo */
 .logo-header{
     position: relative;
     padding: 0;
     margin: 0;
-    bottom: 27px;
+
 }
+
+/* ============================= Footer Container =============================== */
 
 .container-footer{
     display: flex;
@@ -24,6 +30,7 @@
     width: 100vw;
     background-color: aqua;
 }
+
 
 .footer-social{
     background-color: brown;
