@@ -1,0 +1,23 @@
+.container-home-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-header{
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background-color: yellow;
+}
+
+.logo-header{
+    width: 10vw;
+    height: auto;
+}
+
+.container-footer{
+    display: flex;
+    height: 20vh;
+    width: 100vw;
+    background-color: aqua;
+}
