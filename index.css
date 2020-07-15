@@ -33,9 +33,10 @@
 
 
 .footer-social{
-    background-color: brown;
+    background-color: transparent;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-decoration: none;
 }
