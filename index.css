@@ -17,7 +17,11 @@
 
 .container-footer{
     display: flex;
-    height: 20vh;
+    height: auto;
     width: 100vw;
     background-color: aqua;
+}
+
+.footer-social{
+    font-family: sans-serif;
 }
