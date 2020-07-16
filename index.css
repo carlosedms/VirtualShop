@@ -80,7 +80,7 @@
     margin-left: 30px;
 }
 
-/* ============================= Footer Container =============================== */
+/* =================================== Footer Container ====================================== */
 
 .container-footer{
     display: flex;
@@ -89,7 +89,7 @@
     background-color: transparent;
 }
 
-/* ===================================Icon Configs Start======================================= */
+/* Icon Configs Start=================== */
 
 .footer-social{
     background-color: none;
@@ -128,4 +128,17 @@
 .tticon:hover{
     color: #00aced;
     transition: 0.2s;
+}
+
+/* Icon Configs End===================== */
+
+.footer-contact{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
 }
