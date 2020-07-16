@@ -60,7 +60,7 @@
     background-color: #EAECEE;
     border-radius: 20px;
     padding: 10px;
-    
+
 }
 
 /* Tag do input. */
@@ -94,10 +94,11 @@
 .footer-social{
     background-color: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     text-decoration: none;
 }
+
 
 .fbicon{
     color: black;
