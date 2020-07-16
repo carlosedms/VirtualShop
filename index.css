@@ -13,7 +13,7 @@
     height: 15vh;
     width: 100vw;
     background: white;
-
+    z-index: 1;
     box-shadow: 1px 1px 20px 0px #000000;
 }
 
@@ -83,11 +83,15 @@
 /* =================================== Footer Container ====================================== */
 
 .container-footer{
-    display: flex;
+    display: inline-flex;
     height: auto;
     width: 100vw;
-    background-color: transparent;
+    height: 60vh;
+    background-color: #D5D8DC;
     justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    
 }
 
 /* Icon Configs Start=================== */
