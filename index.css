@@ -80,16 +80,17 @@
     margin-left: 30px;
 }
 
-/* ============================= Footer Container =============================== */
+/* =================================== Footer Container ====================================== */
 
 .container-footer{
     display: flex;
     height: auto;
     width: 100vw;
     background-color: transparent;
+    justify-content: space-between;
 }
 
-/* ===================================Icon Configs Start======================================= */
+/* Icon Configs Start=================== */
 
 .footer-social{
     background-color: none;
@@ -102,15 +103,18 @@
 
 .fbicon{
     color: black;
+    transition: 0.2s;
+    transform-origin: 0% 0%;
 }
 
 .fbicon:hover{
     color: #3b5998;
-    transition: 0.2s;
 }
 
 .igicon{
     color: black;
+    transition-duration: 0.2s;
+    transform-origin: 0% 0%;
 }
 
 .igicon:hover{
@@ -123,9 +127,39 @@
 
 .tticon{
     color: black;
+    transition: 0.2s;
+    transform-origin: 0% 0%;
 }
 
 .tticon:hover{
     color: #00aced;
-    transition: 0.2s;
+}
+
+/* Icon Configs End===================== */
+
+.footer-contact{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.telefone{
+    margin-right: 10px;
+}
+
+.contactnumber{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.envelopes{
+    margin-right: 10px;
+}
+
+.contactmail{
+    display: flex;
 }
