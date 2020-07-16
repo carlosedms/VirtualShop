@@ -164,3 +164,27 @@
 .contactmail{
     display: flex;
 }
+
+.footer-opt{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 18px;
+}
+
+.optsec{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: inherit;
+    color: black;
+    margin: 7px 0px;
+    margin-left: 10px;
+    transition: 0.2s;
+    transform-origin: inherit;
+}
+
+.optsec:hover{
+    text-decoration: underline;
+}
