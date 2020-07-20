@@ -17,6 +17,7 @@
 }
 
 /* ================================== Container Geral da Pagina ================================ */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap%27');
 
 .container-home-page{
     display: flex;
@@ -107,8 +108,56 @@
     position: relative;
     flex-direction: column;
     width: 100vw;
+    flex-direction: column;
 }
 /* ==================================== Descontos =========================================== */
+.container-descontos{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 35vh;
+    overflow: hidden;
+}
+
+.descontos-main{
+    padding-left: 70px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 35vh;
+    background-color: rgb(156, 4, 34);
+}
+
+.descontos-btn{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    transition: 0.2s;
+}
+
+.descontos-btn:hover{
+    color: grey;
+}
+
+.descontos-txt{
+    color: white;
+    font-size: 15px;
+    font-family: 'Bebas Neue', cursive;
+    padding: 5px 5px;
+}
+
+.txtsec{
+    padding: 5px 0px;
+}
 
 /* ========================== Destaques da moda masculina ================================== */
 .container-titulo-destaque{
@@ -279,6 +328,8 @@
 }
 
 .footer-opt{
+    align-items: center;
+    justify-content: center;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
