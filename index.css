@@ -1,6 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+/* ============================= Scrossbar Styless ======================================== */
+::-webkit-scrollbar-track {
+    background-color: #D5D8DC;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #ABB2B9;
+    border-radius: 20px;
+}
+
+/* ================================== Container Geral da Pagina ================================ */
+
 .container-home-page{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* ==================== Header ================================ */
@@ -20,7 +42,7 @@
 /* Container dos botões. */
 .container-nav-header{
     display: flex;
-    width: 23vw;
+    width: 20vw;
     height: 10vh;
     background-color: white;
     justify-content: space-between;
@@ -79,9 +101,91 @@
     padding: 0;
     margin-left: 30px;
 }
+/* ===================================== container main ======================================== */
+.container-main{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100vw;
+}
 /* ==================================== Descontos =========================================== */
 
 /* ========================== Destaques da moda masculina ================================== */
+.container-titulo-destaque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.titulo-destaques{
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container-destaques-moda{
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+}
+
+.container-itens-destaque{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 5px 0;
+}
+
+
+.itens-destaque{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .1);
+    width: 174px;
+    height: 50vh;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.itens-destaque:hover{
+    background-color: rgba(44, 62, 80, 0.3);
+}
+
+.item-destaque-img{
+    width: 170px;
+    height: 30vh;
+    margin-left: 2px;
+    margin-top: 2px;
+
+}
+
+.item-destaque-marca{
+    margin: 7px 0 10px 3px;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    color: black;
+}
+
+.item-destaque-titulo{
+    text-align: start;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color:  #566573;
+    margin: 5px 0 7px 3px;
+}
+
+.item-destaque-preco{
+    margin-left: 3px;
+    font-size: 14px;
+    color: #566573;
+    font-family: monospace;
+}
+
 
 /* ============================= Destaques da moda feminina ==================================== */
 
@@ -90,7 +194,6 @@
 
 .container-footer{
     display: inline-flex;
-    height: auto;
     width: 100vw;
     height: 60vh;
     background-color: #D5D8DC;
@@ -190,7 +293,6 @@
     text-decoration: inherit;
     color: black;
     margin: 7px 0px;
-    margin-left: 10px;
     transition: 0.2s;
     transform-origin: inherit;
 }
