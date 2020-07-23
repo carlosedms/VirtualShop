@@ -7,7 +7,7 @@
     background-color: #D5D8DC;
 }
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 5px;
     height: 6px;
     background: #F4F4F4;
 }
@@ -159,23 +159,26 @@
     padding: 5px 0px;
 }
 
-/* ========================== Destaques da moda masculina ================================== */
+/* ========================== Destaques da moda ================================== */
 .container-titulo-destaque{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 25px 0;
+    height: 10vh;
+    background-color: white;
 }
 
 .titulo-destaques{
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
+    color: black;
 }
 
 .container-destaques-moda{
     display: flex;
     position: relative;
     overflow-x: auto;
+    background-color: white;
 }
 
 .container-itens-destaque{
@@ -188,7 +191,6 @@
     margin: 5px 0;
 }
 
-
 .itens-destaque{
     display: flex;
     position: relative;
@@ -198,6 +200,10 @@
     height: 50vh;
     margin: 0 20px;
     cursor: pointer;
+}
+
+.container-destaques-moda::-webkit-scrollbar-thumb{
+    background: rgb(228, 228, 228);
 }
 
 .itens-destaque:hover{
@@ -231,14 +237,86 @@
 .item-destaque-preco{
     margin-left: 3px;
     font-size: 14px;
-    color: #566573;
+    color: #808B96;
     font-family: monospace;
 }
 
+/* ======================================== Produto em destaque ================================ */
+.container-destaque-produto{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(50deg, #CD5C5C, #F08080, #FA8072, #E9967A, #FFA07A);
+}
 
-/* ============================= Destaques da moda feminina ==================================== */
+.container-destaque-produto-texto{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
 
+.destaque-produto-textos{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-bottom: 20px;
+}
 
+.destaque-produto-titulo{
+    text-align: start;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.destaque-produto-subtitulo{
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color:  rgb(235, 235, 235);
+}
+
+/* ================= btn ================== */
+
+.container-destaque-produto-buttons{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-right: 18vw;
+    cursor: default;
+}
+
+.destaque-produto-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #A1FFE6;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.destaque-produto-btn{
+    padding-right: 10px;
+    font-size: 17px;
+    font-family: 'Bebas Neue', cursive;
+    color:  black;
+}
+.container-destaque-produto-img{
+    display: flex;
+    height: 70vh;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.destaque-produto-img{
+    height: 70vh;
+    width: 35vw;
+
+}
 /* =================================== Footer Container ====================================== */
 
 .container-footer{
