@@ -36,8 +36,8 @@
     height: 15vh;
     width: 100vw;
     background: white;
-    z-index: 2;
-    
+    z-index: 1;
+    box-shadow: 1px 1px 20px 0px #000000;
 }
 
 /* Container dos botões. */
@@ -102,114 +102,22 @@
     padding: 0;
     margin-left: 30px;
 }
-/* ==================================== Switch Container ====================================== */
 
-.container-switch{
+/* ===================================== Container Carrinho ================================== */
+
+.container-carrinho{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    width: 100vw;
-    box-shadow: 1px 1px 20px 0px #000000;
-    background-color: black;
-    z-index: 1;
-    overflow: hidden;
+    height: 85vh;
 }
 
-.switch{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-    width: 80vw;
-    flex-wrap: wrap;
+.carrinho-txt{
+    font-size: 44px;
+    margin: 0 10px;
+    font-family: 'Bebas Neue', cursive;
 }
 
-.switch-btn{
-    color: white;
-    font-size: 17px;
-    padding: 7px;
-    font-weight: bold;
-    transition: all .2s;
-}
-
-.switch-btn:hover {
-    border-bottom: 3px solid white;
-}
-
-/* ======================================= Main Container =================================== */
-
-.container-lista-produtos{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.main-lista-produtos{
-    display: flex;
-    position: relative;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-    width: 92vw;
-    margin: 5px 0;
-}
-
-.container-itens-produtos{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.itens-destaque{
-    display: flex;
-    position: relative;
-    background-color: rgba(0, 0, 0, .1);
-    width: 174px;
-    height: 275px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.itens-destaque:hover{
-    background-color: rgba(44, 62, 80, 0.3);
-}
-
-.item-destaque-img{
-    width: 170px;
-    height: 30vh;
-    margin-left: 2px;
-    margin-top: 2px;
-
-}
-
-.item-destaque-marca{
-    margin: 7px 0 10px 3px;
-    font-family: 'Playfair Display', serif;
-    font-size: 12px;
-    color: black;
-}
-
-.item-destaque-titulo{
-    text-align: start;
-    font-weight: bold;
-    font-family: 'Playfair Display', serif;
-    font-size: 15px;
-    color:  #566573;
-    margin: 5px 0 7px 3px;
-}
-
-.item-destaque-preco{
-    margin-left: 3px;
-    font-size: 14px;
-    color: #808B96;
-    font-family: monospace;
-}
 
 
 /* =================================== Footer Container ====================================== */
@@ -222,8 +130,7 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    box-shadow: 1px 1px 20px 0px #000000;
-    z-index: 1;
+    
 }
 
 /* Icon Configs Start=================== */
