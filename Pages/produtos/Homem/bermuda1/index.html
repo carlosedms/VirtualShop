@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="../../../../ResetCSS.css">
+    <!-- Mudar o icone na aba do navegador -->
     <link rel="shortcut icon" href="../../../../_Image/background/pagina inicial/header/tablogo.png" type="image/x-icon">
+    <!-- Reset do css para as tags -->
+    <link rel="stylesheet" href="../../../../ResetCSS.css">
+    <link rel="stylesheet" href="./index.css">
     <!-- import icons -->
     <script src="https://kit.fontawesome.com/2b621033ea.js" crossorigin="anonymous"></script>
     <!-- titulo do site -->
@@ -20,10 +22,10 @@
                     <a class="nav-btn" href="../../../../index.html">Home</a>
                 </div>
                 <div>
-                    <a class="nav-btn btn-homem" href="../index.html">Homem</a>
+                    <a class="nav-btn btn-homem" href="../../../listProdutos/listHomemPage/index.html">Homem</a>
                 </div>
                 <div>
-                    <a class="nav-btn btn-mulher" href="../../listMulherPage/index.html">Mulher</a>
+                    <a class="nav-btn btn-mulher" href="../../../listProdutos/listMulherPage/index.html">Mulher</a>
                 </div>
             </div>
             <div class="container-busca-header">
@@ -34,64 +36,20 @@
                 <a href="../../../Carrinho/index.html" style="color: black;"><i class="fas fa-shopping-cart fa-2x"></i></a>
             </div>
         </div>
-        <div class="container-switch">
-            <div class="switch">
-                <div>
-                    <a class="switch-btn" href="../Camisa/index.html">Camisas...</a>
-                </div>
-                <div>
-                    <a class="switch-btn" href="../Calçao/index.html">Calções...</a>
-                </div>
-                <div>
-                    <a class="switch-btn" href="../Moletons/index.html">Moletons</a>
-                </div>
-                <div>
-                    <a class="switch-btn" href="./index.html">Calçados</a>
-                </div>
-                <div>
-                    <a class="switch-btn" href="../Acessorios/index.html">Acessorios</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="container-lista-produtos">
-            <div  class="main-lista-produtos">
-                <a class="itens-destaque" href="../../../produtos/Homem/tenis1/index.html"><div>
-                    <img class="item-destaque-img" src="../../../../_Image/Produtos/Masculino/roupas/tenis/sapatenis verde cano longo.jpg" alt="img">
-                    <p class="item-destaque-marca">The Closet</p>
-                    <h1 class="item-destaque-titulo">Tênis canolongo verde</h1>
-                    <p class="item-destaque-preco">R$ 299,99</p>
-                </div></a>
-                <a class="itens-destaque" href="../../../produtos/Homem/tenis2/index.html"><div>
-                    <img class="item-destaque-img" src="../../../../_Image/Produtos/Masculino/roupas/tenis/tenis branco.png" alt="img">
-                    <p class="item-destaque-marca">The Closet</p>
-                    <h1 class="item-destaque-titulo">Tênis confort branco</h1>
-                    <p class="item-destaque-preco">R$ 399,99</p>
-                </div></a>
-                <a class="itens-destaque" href="../../../produtos/Homem/meia1/index.html"><div>
-                    <img class="item-destaque-img" src="../../../../_Image/Produtos/Masculino/roupas/meias/meia estampada azul.jpg" alt="img">
-                    <p class="item-destaque-marca">The Closet</p>
-                    <h1 class="item-destaque-titulo">Meia estampada azul</h1>
-                    <p class="item-destaque-preco">R$ 59,99</p>
-                </div></a>
-                <a class="itens-destaque" href="../../../produtos/Homem/meia2/index.html"><div>
-                    <img class="item-destaque-img" src="../../../../_Image/Produtos/Masculino/roupas/meias/meia estampada verde.jpg" alt="img">
-                    <p class="item-destaque-marca">The Closet</p>
-                    <h1 class="item-destaque-titulo">Meia estampada verde</h1>
-                    <p class="item-destaque-preco">R$ 59,99</p>
-                </div></a>
-                <a class="itens-destaque" href="../../../produtos/Homem/sandalia2/index.html"><div>
-                    <img class="item-destaque-img" src="../../../../_Image/Produtos/Masculino/roupas/sandalias/sandalia preta2.jpg" alt="img">
-                    <p class="item-destaque-marca">The Closet</p>
-                    <h1 class="item-destaque-titulo">Sandalia percata preta</h1>
-                    <p class="item-destaque-preco">R$ 98,99</p>
-                </div></a>
-                <a class="itens-destaque" href="../../../produtos/Homem/sandalia1/index.html"><div>
-                    <img class="item-destaque-img" src="../../../../_Image/Produtos/Masculino/roupas/sandalias/sandalia preta.png" alt="img">
-                    <p class="item-destaque-marca">The Closet</p>
-                    <h1 class="item-destaque-titulo">Sandalia percata preta modelo 2</h1>
-                    <p class="item-destaque-preco">R$ 49,99</p>
-                </div></a>
+        <div class="container-item">
+            <div>
+                <img style="border-radius: 10px; height: 60vh;" src="../../../../_Image/Produtos/Masculino/roupas/bermudas/bermuda bege tropical.png" alt="img">
+            </div>
+            <div class="item-txt">
+                <p style="font-size: 40px;">Bermuda florida jeans</p>
+                <p style="font-size: 40px;">R$69,99</p>
+                <div style="margin: 15px 0px 25px 0px;">
+                    <a class="item-btns" href="#">Adicionar ao carrinho <i class="fas fa-shopping-cart fa-sm"></i></a>
+                </div>
+                <div>
+                    <a class="item-btns" href="#">Calcular frete <i class="fas fa-location-arrow fa-xs"></i></a>
+                </div>
             </div>
         </div>
 
