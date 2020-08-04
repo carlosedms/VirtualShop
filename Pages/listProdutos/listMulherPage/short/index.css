@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+/* ============================= Scrossbar Styless ======================================== */
+::-webkit-scrollbar-track {
+    background-color: #D5D8DC;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #ABB2B9;
+    border-radius: 20px;
+}
+
+/* ================================== Container Geral da Pagina ================================ */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap%27');
+
+.container-home-page{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* ==================== Header ================================ */
+
+/* Container geral do header. */
+.container-header{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+    background: white;
+    z-index: 2;
+    
+}
+
+/* Container dos botões. */
+.container-nav-header{
+    display: flex;
+    width: 20vw;
+    height: 10vh;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Formata os botões. */
+.nav-btn{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    padding: 12px 17px;
+    transition: 0.3s;
+}
+
+/* Animação dos botões. */
+.nav-btn:hover{
+    border-bottom: 4px solid black;
+}
+
+/* Container da pesquisa e do carrinho. */
+.container-busca-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:30px;
+    width: 21vw;
+}
+
+/* Container apenas da pesquisa. */
+.container-busca{
+    display: flex;
+    flex-direction: row;
+    background-color: #EAECEE;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+/* Tag do input. */
+.input-busca-header{
+    border: none;
+    outline: none;
+    height: 1.5vw;
+
+    background-color: #EAECEE;
+}
+
+
+/* configurações da logo */
+.logo-header{
+    position: relative;
+    padding: 0;
+    margin-left: 30px;
+}
+/* ==================================== Switch Container ====================================== */
+
+.container-switch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100vw;
+    box-shadow: 1px 1px 20px 0px #000000;
+    background-color: black;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.switch{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 80vw;
+    flex-wrap: wrap;
+}
+
+.switch-btn{
+    color: white;
+    font-size: 17px;
+    padding: 7px;
+    font-weight: bold;
+    transition: all .2s;
+}
+
+.switch-btn:hover {
+    border-bottom: 3px solid white;
+}
+
+/* ======================================= Main Container =================================== */
+
+.container-lista-produtos{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.main-lista-produtos{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 92vw;
+    margin: 5px 0;
+}
+
+.container-itens-produtos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itens-destaque{
+    display: flex;
+    position: relative;
+    background-color: rgba(0, 0, 0, .1);
+    width: 174px;
+    height: 275px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.itens-destaque:hover{
+    background-color: rgba(44, 62, 80, 0.3);
+}
+
+.item-destaque-img{
+    width: 170px;
+    height: 30vh;
+    margin-left: 2px;
+    margin-top: 2px;
+
+}
+
+.item-destaque-marca{
+    margin: 7px 0 10px 3px;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    color: black;
+}
+
+.item-destaque-titulo{
+    text-align: start;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color:  #566573;
+    margin: 5px 0 7px 3px;
+}
+
+.item-destaque-preco{
+    margin-left: 3px;
+    font-size: 14px;
+    color: #808B96;
+    font-family: monospace;
+}
+
+
+/* =================================== Footer Container ====================================== */
+
+.container-footer{
+    display: inline-flex;
+    width: 100vw;
+    height: 60vh;
+    background-color: #D5D8DC;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px 0px #000000;
+    z-index: 1;
+}
+
+/* Icon Configs Start=================== */
+
+.footer-social{
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.fbicon{
+    color: black;
+    transition: 0.2s;
+    transform-origin: 0% 0%;
+}
+
+.fbicon:hover{
+    color: #3b5998;
+}
+
+.igicon{
+    color: black;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transform-origin: 0% 0%;
+}
+
+.igicon:hover{
+    color: transparent;
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.tticon{
+    color: black;
+    transition: 0.2s;
+    transform-origin: 0% 0%;
+}
+
+.tticon:hover{
+    color: #00aced;
+}
+
+/* Icon Configs End===================== */
+
+.footer-contact{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.telefone{
+    margin-right: 10px;
+}
+
+.contactnumber{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.envelopes{
+    margin-right: 10px;
+}
+
+.contactmail{
+    display: flex;
+}
+
+.footer-opt{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 18px;
+}
+
+.optsec{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: inherit;
+    color: black;
+    margin: 7px 0px;
+    transition: 0.2s;
+    transform-origin: inherit;
+}
+
+.optsec:hover{
+    text-decoration: underline;
+}
